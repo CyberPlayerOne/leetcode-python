@@ -1,7 +1,7 @@
 # 124. Binary Tree Maximum Path Sum
 # https://leetcode.com/problems/binary-tree-maximum-path-sum/
 
-#-----------------------------------------------------------
+# -----------------------------------------------------------
 import sys
 
 # Definition for a binary tree node.
@@ -49,6 +49,6 @@ class Solution:
         self.ans = -sys.maxsize
         self.oneSideMaxWithRoot(root)
         return self.ans
-#-----------------------------------------------------------
-## https://www.youtube.com/watch?v=9ZNky1wqNUw&ab_channel=HuaHua
-## https://www.acwing.com/file_system/file/content/whole/index/content/1753710/
+# -----------------------------------------------------------
+# https://www.youtube.com/watch?v=9ZNky1wqNUw&ab_channel=HuaHua
+# https://www.acwing.com/file_system/file/content/whole/index/content/1753710/
