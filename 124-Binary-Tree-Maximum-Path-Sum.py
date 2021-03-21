@@ -19,13 +19,10 @@ class Solution:
     #     self.ans = -sys.maxsize
 
     def oneSideMaxWithRoot(self, root: TreeNode) -> int:
-        """ max path sum that must includes root node
-
-        Args:
-            root (TreeNode): [description]
-
-        Returns:
-            int: [description]
+        """
+        max path sum that must includes root node
+        :param root:
+        :return:
         """
         if root is None:
             return -sys.maxsize
@@ -36,13 +33,10 @@ class Solution:
         return root.val + max(left, right)
 
     def maxPathSum(self, root: TreeNode) -> int:
-        """max path sum that may or may not include root node
-
-        Args:
-            root (TreeNode): [description]
-
-        Returns:
-            int: [description]
+        """
+        max path sum that may or may not include root node
+        :param root:
+        :return:
         """
         if root is None:
             return 0
