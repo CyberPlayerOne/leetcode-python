@@ -1,6 +1,6 @@
 # leetcode-python & labuladong 的算法小抄
 
-#### p23，动态规划详解 -> 求最值．<p>
+#### p23 动态规划详解 -> 求最值．<p>
 1) 关键问题
 * 重叠⼦问题、 最优⼦结构、 状态转移⽅程<br/>
 2) 解法框架
@@ -9,9 +9,9 @@
 * DP哈希表的迭代解法（哈希表＋迭代＋自底向上）</br>
 3) 例题
 * 斐波那契数列</br>
-* p30，凑零钱问题 [322-Coin-Change.py](0322-Coin-Change/322.py)
+* p30 凑零钱问题 [322-Coin-Change](0322-Coin-Change/322.py)
 
-#### p37, 回溯算法详解 -> 求所有解<p>
+#### p37 回溯算法详解 -> 求所有解<p>
 回溯算法的决策树遍历框架：
 1) 关键问题
 * 路径／选择列表／结束条件
@@ -21,5 +21,5 @@
         for-loop迭代选择:</br>
             做选择 -> backtrack(路径，选择列表) -> 撤销选择</br>
 3) 例题
-* p38 全排列问题 [46-Permutations.py](0046-Permutations/46.py)
-* N皇后问题
+* p38 全排列问题 [46-Permutations](0046-Permutations/46.py)
+* p43 N皇后问题 [0051-N-Queens](0051-N-Queens/51.py)
