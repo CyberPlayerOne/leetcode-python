@@ -1,4 +1,6 @@
+# https://leetcode.com/problems/permutations/
 from typing import List
+import copy
 
 
 class Solution:
@@ -20,7 +22,7 @@ class Solution:
     def backtrack(self, nums: List[int], track: List[int]):
         # 触发结束条件
         if len(track) == len(nums):
-            self.res.append(list(track))  # Needs to create a new list otherwise it's merely a ref
+            self.res.append(copy.deepcopy(track))  # Needs to create a new list otherwise it's merely a ref
             # print(track, self.res)
             return
 
@@ -35,6 +37,4 @@ class Solution:
             # 取消选择i，之后在下一次iteration中尝试选择i+1在此位置
             track.pop()
 
-
-# sol = Solution()
-# print(sol.permute([1, 2, 3]))
+# print(Solution().permute([1, 2, 3]))

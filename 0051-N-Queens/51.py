@@ -1,4 +1,6 @@
+# https://leetcode.com/problems/n-queens/
 from typing import List
+import copy
 
 
 class Solution:
@@ -15,7 +17,7 @@ class Solution:
         # '.'表示空，'Q'表示皇后，初始化空棋盘
         board = [['.'] * n for _ in range(n)]  # To create n different sub lists
         self.backtrack(board, 0)
-        return self.res
+        return [[''.join(line) for line in b] for b in self.res]
 
     def backtrack(self, board: List[List[str]], row: int):
         """
@@ -28,8 +30,9 @@ class Solution:
         """
         # 触发结束条件
         if row == len(board):
-            self.res.append(board)
+            self.res.append(copy.deepcopy(board))
             return
+
         n = len(board[row])
         for col in range(n):
             # 排除不合法选择
@@ -50,3 +53,20 @@ class Solution:
         :param col:
         :return:
         """
+        n = len(board)
+        # 检查列是否有皇后互相冲突
+        for i in range(n):
+            if board[i][col] == 'Q':
+                return False
+        # 检查左上方斜线是否有皇后互相冲突
+        for i, j in zip(range(row - 1, -1, -1), range(col - 1, -1, -1)):
+            if board[i][j] == 'Q':
+                return False
+        # 检查右上方斜线是否有皇后互相冲突
+        for i, j in zip(range(row - 1, -1, -1), range(col + 1, n, 1)):
+            if board[i][j] == 'Q':
+                return False
+
+        return True
+
+# print(Solution().solveNQueens(4))
