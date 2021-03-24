@@ -24,14 +24,17 @@ class Solution:
             # 将当前队列中的所有节点向四周扩散
             for i in range(sz):
                 cur = q.popleft()
+
                 # 判断是否到达终点
                 if cur.left is None and cur.right is None:
                     return depth
+
                 # 将cur的相邻节点left和right加入队列
                 if cur.left is not None:
                     q.append(cur.left)
                 if cur.right is not None:
                     q.append(cur.right)
+                    
             # 这里增加步数
             depth += 1
 
