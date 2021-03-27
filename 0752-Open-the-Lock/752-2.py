@@ -1,7 +1,9 @@
 # https://leetcode.com/problems/open-the-lock/
 
+# 双向BFS (Bi-directional BFS)
+
+
 from typing import List
-from collections import deque
 
 
 # 向上拨动一次
@@ -26,37 +28,40 @@ def minusOne(s: str, j: int) -> str:
 
 class Solution:
     def openLock(self, deadends: List[str], target: str) -> int:
-        # 记录已经穷举过的密码，防止走回头路
+        # 用集合不用队列queue, 可以快速判断元素是否存在
+        q1 = set()
+        q2 = set()
         visited = set()
-        q = deque()
-        # 从起点开始启动广度优先搜索BFS
+
         step = 0
-        q.append('0000')
-        visited.add('0000')
+        q1.add('0000')
+        q2.add(target)
 
-        while len(q) != 0:
-            sz = len(q)
-            # 将当前队列中的所有节点向周围扩散
-            for i in range(sz):
-                cur = q.popleft()
-
-                # 判断是否到达终点
+        while len(q1) != 0 and len(q2) != 0:
+            # 哈希集合在遍历的过程中不能修改，用temp存储扩散结果
+            temp = set()
+            # 将q1中的所有节点向周围扩散
+            for cur in q1:
                 if cur in deadends:
-                    continue  # 此路不通
-                if cur == target:
+                    continue
+                if cur in q2:
                     return step
+                visited.add(cur)
 
-                # 将一个节点的未遍历相邻节点加入队列
+                # 将一个节点的未遍历相邻节点加入集合
                 for j in range(4):
                     up = plusOne(cur, j)
                     if up not in visited:
-                        q.append(up)
-                        visited.add(up)
+                        temp.add(up)
                     down = minusOne(cur, j)
                     if down not in visited:
-                        q.append(down)
-                        visited.add(down)
+                        temp.add(down)
+
             # 在这里增加步数
             step += 1
-        # 如果穷举完都没有找到目标密码，那就是找不到了
+            # temp相当于q1
+            # 这里交换q1 q2,下一论while就是扩散q2
+            q1 = q2
+            q2 = temp
+
         return -1
