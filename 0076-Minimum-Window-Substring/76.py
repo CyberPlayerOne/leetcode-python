@@ -33,7 +33,7 @@ class Solution:
                     valid_chars += 1
 
             # 判断左侧窗口是否要收缩
-            while valid_chars == len(need) and left <= right - len(t):
+            while valid_chars == len(need):  # and left <= right - len(t):
                 print(f's[{left}:{right}] = {s[left:right]}', valid_chars, len(need), '*')
                 # 在此更新最小覆盖子串
                 if right - left < min_length:
