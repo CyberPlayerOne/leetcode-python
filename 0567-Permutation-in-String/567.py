@@ -39,7 +39,9 @@ class Solution:
 
                 # 窗口内数据更新
                 if d in need:
-                    # [重要] 必须先检查这个，只当window内d符合need中d个数时，才对valid_chars减1. 如果window[d] > need[d]或者window[d] < need[d]时，都不更新valid_chars
+                    # [重要] 左侧收缩时必须先检查这个，只当window内d符合need中d个数时，才对valid_chars减1.
+                    # 如果window[d] > need[d]或者window[d] < need[d]，都不更新valid_chars，否则计数不对。
+                    # 比如window[d]本来就小于need[d]，此时valid_chars应该不更新。
                     if window[d] == need[d]:
                         valid_chars -= 1
                     window[d] -= 1
