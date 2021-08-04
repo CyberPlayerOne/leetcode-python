@@ -13,6 +13,9 @@ class Solution:
 
         while right < len(s):
             # print(f's[{left}:{right}] = {s[left:right]}', valid_chars, len(need), )
+            print(f's[{left}:{right}] = {s[left:right]}', valid_chars, len(need),
+                  dict(sorted(need.items())),
+                  dict(sorted(window.items())), sep='\t')
             c = s[right]
             right += 1
 
@@ -21,12 +24,12 @@ class Solution:
                 window[c] = window.get(c, 0) + 1
                 if window[c] == need[c]:
                     valid_chars += 1
-
+            # print(f's[{left}:{right}] = {s[left:right]}', valid_chars, len(need), f"{(window[c], need[c]) if c =='e' else ''}")
             # 判断左侧窗口是否需要收缩
             while right - left >= len(t):
-                print(f's[{left}:{right}] = {s[left:right]}', valid_chars, len(need), '*',
+                print(f's[{left}:{right}] = {s[left:right]}', valid_chars, len(need),
                       dict(sorted(need.items())),
-                      dict(sorted(window.items())), )
+                      dict(sorted(window.items())), '*', sep='\t')
                 # 此处判断是否找到了合法的子串
                 if valid_chars == len(need):
                     return True
@@ -36,9 +39,10 @@ class Solution:
 
                 # 窗口内数据更新
                 if d in need:
-                    window[d] -= 1
-                    if window[d] != need[d]:
+                    # [重要] 必须先检查这个，只当window内d符合need中d个数时，才对valid_chars减1. 如果window[d] > need[d]或者window[d] < need[d]时，都不更新valid_chars
+                    if window[d] == need[d]:
                         valid_chars -= 1
+                    window[d] -= 1
 
         # 未找到符合条件的子串
         return False
@@ -46,5 +50,6 @@ class Solution:
 
 sol = Solution()
 assert sol.checkInclusion("ab", "eidboaoo") is False
+assert sol.checkInclusion("hello", "ooolleoooleh") is False
 assert sol.checkInclusion("trinitrophenylmethylnitramine",
                           "dinitrophenylhydrazinetrinitrophenylmethylnitramine") is True

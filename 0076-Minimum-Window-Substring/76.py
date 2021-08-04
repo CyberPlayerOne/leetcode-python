@@ -14,7 +14,6 @@ class Solution:
 
         need = collections.Counter(t)
 
-
         # 结果
         # 记录最小覆盖子串的起始索引及长度
         start = 0
@@ -48,9 +47,9 @@ class Solution:
 
                 # 进行窗口内数据的更新
                 if d in need:
-                    window[d] -= 1
-                    if window[d] < need[d]:
+                    if window[d] == need[d]:
                         valid_chars -= 1
+                    window[d] -= 1
 
         return '' if min_length == sys.maxsize else s[start:start + min_length]
 
