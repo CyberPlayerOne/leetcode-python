@@ -9,10 +9,11 @@ class Solution:
         window = dict()
         left = 0
         right = 0
-
-        need = collections.Counter(t)
         # valid变量表示窗口中满足need条件的字符个数.如果valid和len(need)相等，那么窗口已经满足条件，即完全覆盖t
         valid_chars = 0
+
+        need = collections.Counter(t)
+
 
         # 结果
         # 记录最小覆盖子串的起始索引及长度
