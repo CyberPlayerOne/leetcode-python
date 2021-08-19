@@ -34,5 +34,5 @@ class Solution:
         return result
 
 
-print(Solution().findTargetSumWays([1, 0], 1))
-print(Solution().findTargetSumWays([1, 1, 1, 1, 1], 3))
+assert Solution().findTargetSumWays([1, 0], 1) == 2
+assert Solution().findTargetSumWays([1, 1, 1, 1, 1], 3) == 5
