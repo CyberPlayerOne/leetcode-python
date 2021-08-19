@@ -12,7 +12,8 @@ class TreeNode:
 
 
 class Solution:
-    memo = dict()
+    def __init__(self):
+        self.memo = dict()
 
     def rob(self, root: Optional[TreeNode]) -> int:
         if root is None:
