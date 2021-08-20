@@ -3,7 +3,8 @@ from typing import List
 
 
 class Solution:
-    memo = []
+    def __init__(self):
+        self.memo = []
 
     def rob(self, nums: List[int]) -> int:
         # 初始化备忘录
@@ -28,5 +29,5 @@ class Solution:
 nums = [1, 2, 3, 1]
 assert Solution().rob(nums) == 4
 
-nums = [2,7,9,3,1]
+nums = [2, 7, 9, 3, 1]
 assert Solution().rob(nums) == 12
