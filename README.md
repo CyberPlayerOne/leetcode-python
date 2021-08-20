@@ -54,12 +54,30 @@ p71
 
 参见：我写了套框架，把滑动窗口算法变成了默写题 - labuladong[重要].pdf
 
+* 最小覆盖子串 [0076-Minimum-Window-Substring](0076-Minimum-Window-Substring/76.py)
+* 字符串排列 [0567-Permutation-in-String](0567-Permutation-in-String/567.py)
+* 找所有字母异位词 [0438-Find-All-Anagrams-in-a-String](0438-Find-All-Anagrams-in-a-String/438.py)
+* 最长无重复子串 [0003-Longest-Substring-Without-Repeating-Characters](0003-Longest-Substring-Without-Repeating-Characters/3.py)
+
 #### p84 团灭 LeetCode 股票买卖问题 -> <u>动态规划dp</u><p>
 
-121, 122, 309, 714, 123, 188
+参见： #labuladong 公众号：LeetCode买卖股票问题汇总
+
+* [0121-Best-Time-to-Buy-and-Sell-Stock](0121-Best-Time-to-Buy-and-Sell-Stock/121.py)
+* [0122-Best-Time-to-Buy-and-Sell-Stock-II](0122-Best-Time-to-Buy-and-Sell-Stock-II/122.py)
+* [0309-Best-Time-to-Buy-and-Sell-Stock-with-Cooldown](0309-Best-Time-to-Buy-and-Sell-Stock-with-Cooldown/309.py)
+* [0714-Best-Time-to-Buy-and-Sell-Stock-with-Transaction-Fee](0714-Best-Time-to-Buy-and-Sell-Stock-with-Transaction-Fee/714.py)
+* [0123-Best-Time-to-Buy-and-Sell-Stock-III](0123-Best-Time-to-Buy-and-Sell-Stock-III/123.py)
+* [0188-Best-Time-to-Buy-and-Sell-Stock-IV](0188-Best-Time-to-Buy-and-Sell-Stock-IV/188.py)
 
 #### p97 团灭 LeetCode 打家劫舍问题 -> <u>动态规划dp</u><p>
-经典动态规划：打家劫舍系列问题.pdf
+
+参见：经典动态规划：打家劫舍系列问题.pdf
+
+* [0198-House-Robber](0198-House-Robber/198.py)
+* [0213-House-Robber-II](0213-House-Robber-II/213.py)
+* [0337-House-Robber-III](0337-House-Robber-III/337.py)
 
 #### p99 回溯算法和动态规划， 谁是谁爹？ -> <u>?</u><p>
+
 动态规划和回溯算法到底谁是谁爹？ - labuladong 的算法小抄.pdf
