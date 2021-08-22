@@ -46,7 +46,7 @@
 * p54 解开密码锁的最小次数 [0752-Open-the-Lock](0752-Open-the-Lock/752.py) <br/>
   p59 双向BFS优化 [0752-Open-the-Lock](0752-Open-the-Lock/752-2.py) <br/>
 
-#### p63 ⼆分查找详解 -> <u>?</u><p>
+#### p63 ⼆分查找详解 -> <u>TODO</u><p>
 
 p71
 
@@ -81,3 +81,8 @@ p71
 #### p99 回溯算法和动态规划， 谁是谁爹？ -> <u>?</u><p>
 
 动态规划和回溯算法到底谁是谁爹？ - labuladong 的算法小抄.pdf
+
+* [0494-Target-Sum](0494-Target-Sum/494.py)
+
+#### p101 经典动态规划问题： ⾼楼扔鸡蛋 -> <u>TODO</u><p>
+
