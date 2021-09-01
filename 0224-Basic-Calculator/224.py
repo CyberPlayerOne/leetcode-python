@@ -14,13 +14,15 @@ class Solution:
 
             while len(s) > 0:
                 c = s.pop(0)
-                if c.isnumeric():
+                # 如果是数字，连续读入
+                if c.isdigit():
                     num = 10 * num + int(c)
                 # 遇到左括号，开始递归计算num
                 if c == '(':
                     num = helper(s)
 
-                if (not c.isnumeric() and c != ' ') or len(s) == 0:
+                # 如果不是数字，那就大概率是下一个符号，之前的数字和符号要存进stack中
+                if (not c.isdigit() and c != ' ') or len(s) == 0:
                     if sign == '+':
                         stack.append(num)
                     elif sign == '-':
@@ -30,6 +32,7 @@ class Solution:
                     elif sign == '/':
                         # Python除法 向0取整的写法
                         stack[-1] = int(stack[-1] / float(num))
+                    # 更新符号为当前符号，数字清零
                     num = 0
                     sign = c
 
