@@ -33,9 +33,14 @@ class Solution:
                     num = 0
                     sign = c
 
-                # 遇到右括号，返回地柜结果
+                # 遇到右括号，返回递归结果
                 if c == ')':
                     break
             return sum(stack)
 
         return helper(list(s))
+
+
+print(Solution().calculate('1+1'))
+print(Solution().calculate('1+3*2'))
+print(Solution().calculate('(1+3)*2'))
