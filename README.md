@@ -78,11 +78,14 @@ p71
 * [0213-House-Robber-II](0213-House-Robber-II/213.py)
 * [0337-House-Robber-III](0337-House-Robber-III/337.py)
 
-#### p99 回溯算法和动态规划， 谁是谁爹？ -> <u>?</u><p>
+#### p99, p119 回溯算法和动态规划， 谁是谁爹？ -> <u>?</u><p>
 
-动态规划和回溯算法到底谁是谁爹？ - labuladong 的算法小抄.pdf
+参见：动态规划和回溯算法到底谁是谁爹？ - labuladong 的算法小抄.pdf
 
 * [0494-Target-Sum](0494-Target-Sum/494.py)
+* [0001-Two-Sum](0001-Two-Sum/1.py) #TODO
+* [0015-3Sum](0015-3Sum/15.py) #TODO
+* [0018-4Sum](0018-4Sum/18.py) #TODO
 
 #### p101 经典动态规划问题： ⾼楼扔鸡蛋 -> <u>TODO</u><p>
 
@@ -109,4 +112,9 @@ p71
 * [0770-Basic-Calculator-IV](0770-Basic-Calculator-IV/770.py) #TODO
 
 #### p117 动态规划系列 -> <u></u><p>
+
 参见：#labuladong 公众号：动态规划答疑篇
+
+#### p122 动态规划设计： 最⻓递增⼦序列 -> <u></u><p>
+
+参见：#labuladong 公众号：动态规划设计之最⻓递增⼦序列
