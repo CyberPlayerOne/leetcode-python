@@ -89,6 +89,10 @@ p71
 
 #### p101 经典动态规划问题： ⾼楼扔鸡蛋 -> <u>TODO</u><p>
 
+* [0887-Super-Egg-Drop](0887-Super-Egg-Drop/887.py) #TODO
+
+#### p140 经典动态规划问题： ⾼楼扔鸡蛋（进阶） -> <u>TODO</u><p>
+
 #### p123 动态规划之背包问题 -> <u></u><p>
 
 参见：#labuladong 公众号：背包类型问题/1 - 经典动态规划：0-1 背包问题.pdf
@@ -118,3 +122,23 @@ p71
 #### p122 动态规划设计： 最⻓递增⼦序列 -> <u></u><p>
 
 参见：#labuladong 公众号：动态规划设计之最⻓递增⼦序列
+
+* [0300-Longest-Increasing-Subsequence](0300-Longest-Increasing-Subsequence/solution1.py)
+
+#### p127 编辑距离 -> <u>#TODO</u><p>
+
+* [0072-Edit-Distance](0072-Edit-Distance/solution.py) #TODO
+
+#### p140 经典动态规划问题： ⾼楼扔鸡蛋（进阶） -> <u>#TODO</u><p>
+
+参见：#labuladong 公众号：经典动态规划：高楼扔鸡蛋（进阶篇）
+
+#### p152 经典动态规划： 戳⽓球 -> <u>Hard</u> TODO<p>
+
+参见：#labuladong 公众号：经典动态规划：戳气球问题
+
+* [0312-Burst-Balloons](0312-Burst-Balloons/solution.py) #TODO
+
+#### p152 最⻓公共⼦序列 -> <u></u><p>
+
+* [1143-Longest-Common-Subsequence](1143-Longest-Common-Subsequence/solution.py)
