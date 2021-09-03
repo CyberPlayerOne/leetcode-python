@@ -1,0 +1,16 @@
+# https://leetcode.com/problems/longest-increasing-subsequence/
+from typing import List
+
+
+class Solution:
+    def lengthOfLIS(self, nums: List[int]) -> int:
+        # dp数组全都初始化为1
+        dp = [1 for _ in range(len(nums))]
+
+        for i in range(len(nums)):
+            for j in range(i):
+                if nums[j] < nums[i]:
+                    dp[i] = max(dp[i], dp[j] + 1)
+
+        res = max(dp)
+        return res
