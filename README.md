@@ -55,7 +55,7 @@ p71
 参见：我写了套框架，把滑动窗口算法变成了默写题 - labuladong[重要].pdf
 
 * 最小覆盖子串 [0076-Minimum-Window-Substring](0076-Minimum-Window-Substring/76.py)
-* 字符串排列 [0567-Permutation-in-String](0567-Permutation-in-String/567.py)
+* 字符串排列 [0567-Permutation-in-String](0567-Permutation-in-String/567.py): Match & Permutation这种题，考虑对比dict字母计数（collections.Counter(t)）。
 * 找所有字母异位词 [0438-Find-All-Anagrams-in-a-String](0438-Find-All-Anagrams-in-a-String/438.py)
 * 最长无重复子串 [0003-Longest-Substring-Without-Repeating-Characters](0003-Longest-Substring-Without-Repeating-Characters/3.py)
 
