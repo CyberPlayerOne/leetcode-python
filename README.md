@@ -123,11 +123,11 @@ p71
 
 参见：#labuladong 公众号：动态规划设计之最⻓递增⼦序列
 
-* [0300-Longest-Increasing-Subsequence](0300-Longest-Increasing-Subsequence/solution1.py)
+* [0300-Longest-Increasing-Subsequence](0300-Longest-Increasing-Subsequence/300-1.py)
 
 #### p127 编辑距离 -> <u>#TODO</u><p>
 
-* [0072-Edit-Distance](0072-Edit-Distance/solution.py) #TODO
+* [0072-Edit-Distance](0072-Edit-Distance/72.py) #TODO
 
 #### p140 经典动态规划问题： ⾼楼扔鸡蛋（进阶） -> <u>#TODO</u><p>
 
@@ -137,8 +137,14 @@ p71
 
 参见：#labuladong 公众号：经典动态规划：戳气球问题
 
-* [0312-Burst-Balloons](0312-Burst-Balloons/solution.py) #TODO
+* [0312-Burst-Balloons](0312-Burst-Balloons/312.py) #TODO
 
 #### p155 最⻓公共⼦序列 -> <u></u><p>
 
-* [1143-Longest-Common-Subsequence](1143-Longest-Common-Subsequence/solution.py)
+* [1143-Longest-Common-Subsequence](1143-Longest-Common-Subsequence/1143-dp-table.py)
+
+#### p162 动态规划之⼦序列问题解题模板 -> <u></u><p>
+
+参见：#labuladong 公众号：动态规划设计之最⻓递增⼦序列
+
+* [0516-Longest-Palindromic-Subsequence](0516-Longest-Palindromic-Subsequence/516.py)
