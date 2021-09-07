@@ -139,6 +139,6 @@ p71
 
 * [0312-Burst-Balloons](0312-Burst-Balloons/solution.py) #TODO
 
-#### p152 最⻓公共⼦序列 -> <u></u><p>
+#### p155 最⻓公共⼦序列 -> <u></u><p>
 
 * [1143-Longest-Common-Subsequence](1143-Longest-Common-Subsequence/solution.py)
