@@ -148,3 +148,9 @@ p71
 参见：#labuladong 公众号：动态规划设计之最⻓递增⼦序列
 
 * [0516-Longest-Palindromic-Subsequence](0516-Longest-Palindromic-Subsequence/516.py)
+
+#### p164 动态规划之博弈问题 -> <u>TODO</u><p>
+
+#### p173 动态规划之正则表达 -> <u>TODO</u><p>
+
+[0010-Regular-Expression-Matching](0010-Regular-Expression-Matching/10.py)
