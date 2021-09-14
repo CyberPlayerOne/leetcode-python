@@ -155,7 +155,9 @@ p71
 
 [0010-Regular-Expression-Matching](0010-Regular-Expression-Matching/10.py)
 
-#### p181 动态规划之四键键盘 -> <u>TODO</u><p>
+#### p181 动态规划之四键键盘 -> <u>动态规划：不同的状态设计</u><p>
 
 [0651-4-Keys-Keyboard](0651-4-Keys-Keyboard/)
-p184
+
+#### p188 动态规划之KMP字符匹配算法 -> <u>TODO</u><p>
+[0028-Implement-strStr()](0028-Implement-strStr())
