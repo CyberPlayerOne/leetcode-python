@@ -160,4 +160,9 @@ p71
 [0651-4-Keys-Keyboard](0651-4-Keys-Keyboard/)
 
 #### p188 动态规划之KMP字符匹配算法 -> <u>TODO</u><p>
+
 [0028-Implement-strStr()](0028-Implement-strStr())
+
+参见 [动态规划之 KMP 算法详解](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247484731&idx=2&sn=d9d6b24c7f94d5e43e08666e82251984)
+
+p193
