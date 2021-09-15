@@ -1,5 +1,7 @@
 # leetcode-python </br>& </br> labuladong的算法小抄
 
+labuladong微信公众号 - [列表形式目录](https://mp.weixin.qq.com/s/AWsL7G89RtaHyHjRPNJENA)
+
 #### p23 动态规划详解 -> <u>求最值</u><p>
 
 动态规划问题的⼀般形式就是求最值。 动态规划其实是运筹学的⼀种<u>最优化⽅法</u>， 只不过在计算机问题上应⽤⽐较多， ⽐如说让你求<u>最⻓递增⼦序列</u>呀， <u>最⼩编辑距离</u>呀等等。
@@ -55,9 +57,12 @@ p71
 参见：我写了套框架，把滑动窗口算法变成了默写题 - labuladong[重要].pdf
 
 * 最小覆盖子串 [0076-Minimum-Window-Substring](0076-Minimum-Window-Substring/76.py)
-* 字符串排列 [0567-Permutation-in-String](0567-Permutation-in-String/567.py): Match & Permutation这种题，考虑对比dict字母计数（collections.Counter(t)）。
+* 字符串排列 [0567-Permutation-in-String](0567-Permutation-in-String/567.py): Match &
+  Permutation这种题，考虑对比dict字母计数（collections.Counter(t)）。
 * 找所有字母异位词 [0438-Find-All-Anagrams-in-a-String](0438-Find-All-Anagrams-in-a-String/438.py)
-* 最长无重复子串 [0003-Longest-Substring-Without-Repeating-Characters](0003-Longest-Substring-Without-Repeating-Characters/3.py)
+*
+
+最长无重复子串 [0003-Longest-Substring-Without-Repeating-Characters](0003-Longest-Substring-Without-Repeating-Characters/3.py)
 
 #### p84 团灭 LeetCode 股票买卖问题 -> <u>动态规划dp</u><p>
 
@@ -165,4 +170,9 @@ p71
 
 参见 [动态规划之 KMP 算法详解](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247484731&idx=2&sn=d9d6b24c7f94d5e43e08666e82251984)
 
-p193
+#### p208 贪⼼算法之区间调度问题 -> <u>TODO</u><p>
+
+* [0435-Non-overlapping-Intervals](0435-Non-overlapping-Intervals)
+* [0452-Minimum-Number-of-Arrows-to-Burst-Balloons](0452-Minimum-Number-of-Arrows-to-Burst-Balloons)
+
+p210
