@@ -15,12 +15,11 @@ class Solution:
         # 至少有一个区间不相交
         count = 1
         # 排序后，第一个区间就是ｘ
-        x_end = intervals[0][1]
+        prev_end = intervals[0][1]
         for interval in intervals:
-            start = interval[0]
-            if start >= x_end:
+            curr_start = interval[0]
+            if curr_start >= prev_end:
                 # 找到下一个选择的区间了
                 count += 1
-                x_end = interval[1]
-
+                prev_end = interval[1]
         return count
